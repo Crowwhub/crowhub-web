@@ -1,0 +1,14 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🏗️  Architect Gatekeeper: Checking your code..."
+
+# 1. Run Type Check on the whole project (standard for Next.js)
+echo "Checking TypeScript types..."
+npm run type-check || exit 1
+
+# 2. Run Lint-Staged (Format and Lint only the files you changed)
+echo "Running Linter and Formatter..."
+npx lint-staged || exit 1
+
+echo "✅ Code looks production-ready!"
