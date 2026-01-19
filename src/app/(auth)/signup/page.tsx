@@ -10,11 +10,6 @@ import Link from 'next/link';
 const Signup = () => {
   return (
     <main className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-[#06040e]">
-      {/* --- LAYER 1: Optimized Background Image --- 
-          - priority: Preloads image (Essential for LCP)
-          - fill: absolute positioning to cover parent
-          - sizes: serves smaller images to mobile devices
-      */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/crow-hero.png"
@@ -25,18 +20,11 @@ const Signup = () => {
           className="scale-93 object-cover object-center"
           sizes="100vw"
         />
-        {/* --- LAYER 2: The Gradient Overlay (Replaces your CSS gradient) --- 
-            This is more performant than mixing it in the BG property 
-        */}
         <div className="absolute inset-0 bg-black/30 backdrop-brightness-75" />
       </div>
 
-      {/* --- LAYER 3: The Content --- */}
       <div className="relative z-10 w-126 p-4">
-        {' '}
-        {/* Added container constraint for better mobile handling */}
         <div className="flex flex-col items-center justify-center rounded-[24px] border border-white/5 bg-black/50 p-8 backdrop-blur-sm md:p-16">
-          {/* Header Section */}
           <div className="flex w-full flex-col justify-start text-center md:text-left">
             <h1 className="font-lato text-3xl font-semibold tracking-tight text-white md:text-[32px]">
               Set up your account 🙋‍♂️

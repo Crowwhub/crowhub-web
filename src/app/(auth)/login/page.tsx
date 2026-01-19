@@ -52,13 +52,13 @@ const Login = () => {
                     id="unique-identifier"
                     placeholder="E.g. johndoe@example.com"
                     type="text"
-                    className="font-lato border border-[#ffffff1a] bg-[#ffffff1a] py-2.5 pr-3 pl-6 text-[16px] text-[#565073] backdrop-blur-xs placeholder:text-[#565073]"
+                    className="font-lato border border-[#ffffff1a] bg-[#ffffff1a] py-5 pr-3 pl-6 text-[16px] text-[#565073] backdrop-blur-xs placeholder:text-[#565073]"
                   />
                 </Field>
                 <Field>
                   <FieldLabel htmlFor="password">Password</FieldLabel>
                   <div className="flex flex-col">
-                    <InputGroup className="font-lato border border-[#ffffff1a] bg-[#ffffff1a] py-2.5 pr-3 pl-6 text-[16px] text-[#565073] backdrop-blur-xs">
+                    <InputGroup className="font-lato border border-[#ffffff1a] bg-[#ffffff1a] py-5 pr-3 pl-6 text-[16px] text-[#565073] backdrop-blur-xs">
                       <InputGroupInput
                         placeholder="Enter password"
                         type="password"
@@ -94,7 +94,7 @@ const Login = () => {
                 </Field>
                 <Button
                   type="submit"
-                  className="font-lato cursor-pointer rounded-full border-2 border-[#ffffff1a] bg-[#ffffff1a] px-6 py-6 text-[20px] font-bold tracking-tight text-white hover:scale-105 hover:bg-[#ffffff1a]"
+                  className="font-lato mt-6 flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-linear-to-r from-[#C28CFF] to-[#4845FE] px-6 py-6 text-[20px] font-bold text-white transition-transform duration-200 hover:scale-[1.02] active:scale-95"
                 >
                   Continue
                 </Button>
